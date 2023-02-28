@@ -1,0 +1,12 @@
+How dijkstra algorithm works
+
+keep of list of visited nodes
+keep a list of unvisited nodes but evaluated for minimum distance (thus not have infinity as minimum distance)
+set minimum distance of start node to zero and start there
+
+do until no more unvisited nodes:
+	select the unvisited node with the lowest minimum distance from list of unvisited nodes 
+	evaluate the connected unvisited neighbours and update their minimum distance and the previous node value if needed
+	add each evaluated connected neighbour to list of unvisited unless already in there
+	add selected node to visited node and remove from unvisited
+
